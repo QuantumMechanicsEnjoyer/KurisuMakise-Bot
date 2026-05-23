@@ -1,8 +1,7 @@
-image: makise-kurisu-bot
-version: "1.0"
 services:
   bot:
     build: .
+    image: ghcr.io/quantummechanicsenjoyer/kurisumakise-bot:latest
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
     volumes:
