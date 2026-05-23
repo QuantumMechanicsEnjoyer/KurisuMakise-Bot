@@ -1,0 +1,10 @@
+image: makise-kurisu-bot
+version: "1.0"
+services:
+  bot:
+    build: .
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    volumes:
+      - .:/app
+    command: cargo run --release
